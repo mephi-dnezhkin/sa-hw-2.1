@@ -1,0 +1,8 @@
+Package: log-analyzer
+Version: 1.0
+Section: base
+Priority: optional
+Architecture: all
+Essential: no
+Maintainer: Dmitriy Nezhkin <nezhkind@mail.ru>
+Description: Log Analyzer. Analysis of logs by keyword in the specified directory
