@@ -58,3 +58,29 @@ dpkg-deb --info log-analyzer.deb
 
 ### выполнить скрипт
 check-hosts
+
+
+
+gpg --gen-key
+
+gpg --list-keys
+gpg --list-secret-keys
+
+
+Dmitriy Nezhkin nezhkind@mail.ru
+gpg --delete-secret-key "Dmitriy Nezhkin"
+gpg --delete-key "Dmitriy Nezhkin"
+
+
+Приведение GPG к нормальному виду
+gpg --refresh-keys
+
+Проверка подписанного пакета
+dpkg-sig --verify myproject.deb
+
+Экспорт публичного ключа в файл
+gpg --armor --export 'Dmitriy Nezhkin' > DEB-GPG-KEY-Dmitriy-Nezhkin
+
+
+
+123
